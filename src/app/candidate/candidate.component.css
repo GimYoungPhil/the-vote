@@ -1,8 +1,8 @@
 .card {
-  height: 20rem;
+  height: 15rem;
 }
 
 .card-img {
-  height: 20rem;
+  height: 15rem;
   object-fit: cover;
 }

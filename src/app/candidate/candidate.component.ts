@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostBinding } from '@angular/core';
 
 import { Candidate } from './candidate.model';
 
@@ -8,14 +8,10 @@ import { Candidate } from './candidate.model';
   styleUrls: ['./candidate.component.css']
 })
 export class CandidateComponent implements OnInit {
+  @HostBinding('attr.class') cssClass = 'col-12 col-lg-6'
   @Input() candidate: Candidate;
 
   constructor() {
-    this.candidate = new Candidate(
-      '슬기',
-      'https://pbs.twimg.com/media/DtTp3mQUcAACTIv.jpg',
-      10
-    );
   }
 
   voteUp(): boolean {
