@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Candidate } from './candidate.model';
-import { VirtualTimeScheduler } from 'rxjs';
 
 @Component({
   selector: 'app-candidate',
